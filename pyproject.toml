@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "promptrefinerv99"
+version = "0.1.0"
+description = "To achieve the task of creating a single API endpoint that takes in a string LLM prompt and returns a refined version improved by GPT-4, the first step is to outline the tech stack and the process. We will use Python as the programming language due to its strong support for AI and ML operations, FastAPI for creating the API endpoint because of its asynchronous support and ease of use for such tasks, PostgreSQL as the database to store any required data such as user prompts and revisions, and Prisma as the ORM for efficient database management."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.78.0"
+openai = "*"
+prisma = "*"
+pydantic = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
